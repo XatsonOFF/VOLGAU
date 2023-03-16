@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COVID-19 чекер</title>
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-secondary py-0">
+        <div class="container" id="upheader">
+          <ul class="navbar-nav me-auto w-100">
+            <li class="nav-item dropdown me-5">
+              <a class="nav-link dropdown-toggle py-2 ps-0 pe-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Москва и МО </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Москва и МО</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Санкт-Петербург</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Волгоград</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item ms-5 me-1">
+              <a class="nav-link bg-yellow py-2 px-3" href="#">
+                <img src="img/calendar.png" width="17px" alt="...">
+                <span>Записаться на прием</span>
+              </a>
+            </li>
+            <li class="nav-item me-auto">
+              <a class="nav-link py-2" href="#">
+                <img src="img/telephone.png" width="17px" alt="...">
+                <span>+7 (495) 152-47-53</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> RU </a>
+              <ul class="dropdown-menu" style="max-width: 50px;">
+                <li>
+                  <a class="dropdown-item" href="#">RU</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">EN</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-white">
+        <!--.fixed-top-->
+        <div class="container">
+          <a class="navbar-item" href="#">
+            <img src="img/menu.svg" width="16px" alt="...">
+          </a>
+          <a class="navbar-brand ms-4 me-5" href="#">
+            <img src="img/logo.png" width="134px" alt="...">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fs-5" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ms-4">
+                <a class="nav-link" href="#">Услуги</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link" href="#">Врачи</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link" href="#">Клиники</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link" href="#">Акции</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link active" href="#">Подписка МЕДСИ+</a>
+              </li>
+              <li class="nav-item dropdown ms-4">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Ещё </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Подарочная карта МЕДСИ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Premium</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Стационары</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Программы</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Check up</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Центры Компетенций</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Программа лояльности</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Спасибо МЕДСИ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Франчайзинг</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse fs-5" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link mx-1" href="#">
+                  <img src="img/search.png" width="23px" alt="...">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-1" href="#">
+                  <img src="img/glasses.png" width="42px" alt="...">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-1" href="#">
+                  <img class="me-1" src="img/user.svg" width="22px" alt="..."> Личный кабинет </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid px-0 w-100 position-relative">
+        <h1 class="position-absolute mt-5 start-50 translate-middle text-white fw-bold" id="covid-s">COVID-19 чекер</h1>
+        <img class="w-100 object-fit-cover" src="img/main-img.jpg" alt="">
+        <svg class="landing_intro__arc" viewBox="0 0 1349 83" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M 0 0 C 0 0 301.4838 76 674 76 C 1046.5162 76 1349 0 1349 0 L 1349 83 L 0 83 L 0 0 Z"></path>
+        </svg>
+      </div>
+      <div class="container pb-3">
+        <div class="row justify-content-center">
+          <a class="nav-link col-4 mx-5" style="width: 245px;" href="#">
+            <img class="d-block mx-auto bg-yellow rounded-circle mt-5 mb-4" src="img/landing_icon1.png" style="width: 115px;" alt="">
+            <p class="text-center fw-bold fs-5 lh-sm">Высокая точность и доступность исследования</p>
+          </a>
+          <a class="nav-link col-4 mx-4" style="width: 245px;" href="#">
+            <img class="d-block mx-auto bg-yellow rounded-circle mt-5 mb-4" src="img/landing_icon2.png" style="width: 115px;" alt="">
+            <p class="text-center fw-bold fs-5 lh-sm">Быстрый результат</p>
+          </a>
+          <a class="nav-link col-4 mx-5" style="width: 245px;" href="#">
+            <img class="d-block mx-auto bg-yellow rounded-circle mt-5 mb-4" src="img/landing_icon3.png" style="width: 115px;" alt="">
+            <p class="text-center fw-bold fs-5 lh-sm">Достоверное подтверждение наличия антител</p>
+          </a>
+        </div>
+      </div>
+      <div class="container-fluid bg-blue-l mt-5">
+        <div class="container b-container pt-5 px-4">
+          <div class="subtitle row position-relative d-flex justify-content-center">
+            <div class="text-center fs-1 position-relative bg-blue-l">Вы получите:</div>
+          </div>
+          <div class="subtitle-content row px-4 pt-5">
+            <ul class="col-6 w-50 px-5">
+              <li>Быстрое и качественное исследование: для вакцинированных – IgG к S-белку</li>
+            </ul>
+            <ul class="col-6 w-50 px-5">
+              <li>Консультацию врача по итогам проведенного исследования</li>
+              <li>Результаты исследования (на русском и английском языках) и заключение врача</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container b-container">
+          <div class="row">
+            <div class="accordion accordion-flush landing_services col-8" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed fs-18 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne"> Особенности обследования: </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Тест выполняется пациентам любого возраста: как взрослым, так и детям</li>
+                      <li>Для исследования используется кровь из вены</li>
+                      <li>Специальной подготовки перед сдачей крови не требуется</li>
+                      <li>Срок выполнения исследования – до двух суток (не считая дня сдачи биоматериала)</li>
+                      <li>Результаты анализов предоставляются на русском и английском языках с выпиской врача</li>
+                    </ul>
+                    <p>Тест проводится <a href="#" class="text-green text-decoration-none">во всех клиниках МЕДСИ г. Москвы и Московской области</a> в будни и выходные. </p>
+                    <p>
+                      <b>Важно!</b> Грамотно интерпретировать результаты исследования может только врач.
+                    </p>
+                    <p>Стоимость услуги: <span class="accordion-price d-inline-block text-center fs-4">2 500₽</span>
+                    </p>
+                    <p>
+                      <b>Вы можете записаться к врачу в удобное для вас время <nobr>по телефону <a href="#" class="text-green text-decoration-none"> +7 (495) 152-47-53</a>
+                        </nobr>
+                      </b>. Специалист ответит на все вопросы. Также оплатить специальное предложение и записаться в клинику можно в приложении <a href="#" class="text-green text-decoration-none">SmartMed</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item my-4">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed fs-18 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo"> Как воспользоваться специальным предложением? </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="flush-headingTwo">
+                  <div class="accordion-body">
+                    <p>
+                      <b>Предложение доступно в любой клинике Москвы и Московской области</b>
+                    </p>
+                    <p>Чтобы воспользоваться специальным предложением, достаточно обратиться в удобную для вас клинику МЕДСИ. В регистратуре следует сообщить, что вы пришли за COVID-19 чекером.</p>
+                    <p>После оплаты вас сразу направят в процедурный кабинет для сдачи анализов и запишут на прием к врачу-терапевту для дальнейшей интерпретации результатов. Запись к врачу производится на третьи сутки после сдачи анализов.</p>
+                    <p>Также вы можете оплатить специальное предложение и записаться к врачу в удобное для вас время в приложении <a href="#" class="text-green text-decoration-none">SmartMed</a>. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed show fs-18 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree"> Тест на антитела IgG к S-белку </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse show" aria-labelledby="flush-headingThree">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>По результатам теста можно судить об уровне защитных антител</li>
+                      <li>Исследование имеет большую клиническую чувствительность (99,8%) и высокую специфичность (100%)</li>
+                      <li>Тестирование проводится путем иммунохемилюминесцентного анализа с применением тест-системы OrthoClinicalDiagnostics</li>
+                      <li>Результаты анализов с выпиской врача предоставляются на русском и английском языках</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="container p-0 my-5">
+                <p>Если вы планируете узнать подробности о тестировании, пройти обследование и проконсультироваться со специалистом, получив заключение на русском и английском языках, позвоните по номеру <a href="#" class="text-green text-decoration-none">+7 (495) 152-47-53</a>. Мы подберем оптимальное время для посещения клиники. Запись и оплата услуги возможны через приложение <a href="#" class="text-green text-decoration-none">SmartMed</a>. </p>
+              </div>
+            </div>
+            <div class="landing_services col-4">
+              <h3 class="fw-bold text-center">Задайте вопрос</h3>
+              <h4 class="text-center mb-4">и запишитесь на прием</h4>
+              <div class="card text-center border-0">
+                <div class="card-body bg-green-light">
+                  <p class="card-text text-white fw-bold">Запишитесь на консультацию специалиста по телефону</p>
+                  <a href="#" class="card-link text-decoration-none text-green align-items-center d-flex justify-content-center bg-yellow rounded-5 mx-5 fw-bold lh-lg">
+                    <span>(495)</span>152-47-53 <img class="ms-1" src="img/24-7.svg" width="30px" alt="">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <p class="card-text text-black fw-bold">Запишитесь на прием к специалисту прямо сейчас</p>
+                  <a href="#" class="card-link text-decoration-none text-green bg-blue-l rounded-5 align-items-center d-flex justify-content-center rounded-5 mx-5 fw-bold py-2">Выбрать время</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container b-container mt-5">
+        <div class="row">
+          <div class="col-8 ps-0">
+            <h2 class="ff-HelveticaCyr mb-4">Клиники МЕДСИ</h2>
+            <div class="dropdown">
+              <button class="btn btn-lg bg-white border-dark dropdown-toggle select-clinic text-start p-0 ps-3" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Выберите клинику </button>
+              <ul class="dropdown-menu" style="max-width: 300px;">
+                <li>
+                  <form class="d-flex" role="search">
+                    <input class="mx-2 w-100" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Клинико-диагностический центр МЕДСИ<br> на Белорусской</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Клинико-диагностический центр МЕДСИ<br> на Красной Пресне</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Клинико-диагностический центр МЕДСИ<br> в Грохольском переулке</a>
+                </li>
+              </ul>
+            </div>
+            <iframe class="mt-5" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aff137e4a7d1d2e7508c68991aba5635b98bc7912cf0c679f60b5b159399fbad7&amp;source=constructor" width="750" height="650" frameborder="0"></iframe>
+          </div>
+          <div class="col-4 pe-0">
+            <h3 class="fw-bold text-center">Задайте вопрос</h3>
+            <h4 class="text-center mb-4">и запишитесь на прием</h4>
+            <div class="card text-center border-0">
+              <div class="card-body bg-green-light">
+                <p class="card-text text-white fw-bold">Запишитесь на консультацию специалиста по телефону</p>
+                <a href="#" class="card-link text-decoration-none text-green align-items-center d-flex justify-content-center bg-yellow rounded-5 mx-5 fw-bold lh-lg">
+                  <span>(495)</span>152-47-53 <img class="ms-1" src="img/24-7.svg" width="30px" alt="">
+                </a>
+              </div>
+              <div class="card-body">
+                <p class="card-text text-black fw-bold">Запишитесь на прием к специалисту прямо сейчас</p>
+                <a href="#" class="card-link text-decoration-none text-green bg-blue-l rounded-5 align-items-center d-flex justify-content-center rounded-5 mx-5 fw-bold py-2">Выбрать время</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid bg-green mt-5">
+        <div class="container d-flex justify-content-between">
+          <button type="button" class="btn btn-warning my-3 fs-18 px-3">Записаться на прием</button>
+          <button type="button" class="btn btn-outline-light bg-green-footer my-3 fs-18 px-3">Горячая линия/Оставить отзыв</button>
+          <button type="button" class="btn btn-outline-light bg-green-footer my-3 fs-18 px-3">Вызвать врача/медсестру</button>
+          <button type="button" class="btn btn-outline-light bg-danger my-3 fs-18 px-3">Вызвать скорую помощь</button>
+          <button type="button" class="btn btn-outline-light bg-green-footer my-3 fs-18 px-3">Спасибо МЕДСИ</button>
+        </div>
+      </div>
+      <div class="container fs-5">
+        <div class="row">
+          <div class="container col-9 pb-4 border-end">
+            <h5 class="fw-bold mt-5 mb-4">Карта сайта</h5>
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black">Услуги</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black">Клиики</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black">Врачи</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black">Акции</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black">Программы</a>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle text-decoration-none text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">О компании</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">О компании</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Миссия</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">История</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle text-decoration-none text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Пресс-центр</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Пресс-центр</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Новости</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Статьи</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle text-decoration-none text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Партнеры</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Партнеры</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Велнес клубы</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Медицинские учреждения</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Прочие партнеры</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black">Программа лояльности</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black">Закупки</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-black">Акселератор МЕДСИ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container col-3 ps-5">
+            <h5 class="fw-bold mt-5 mb-4">Присоединяйтесь к нам</h5>
+            <div class="row">
+              <div class="col">
+                <div class="d-inline">
+                  <a href="#" class="text-decoration-none me-2">
+                    <img src="img/telegram.svg" alt="">
+                  </a>
+                  <a href="#" class="text-decoration-none me-2"> 
+                    <img src="img/vk.svg" alt="">
+                  </a>
+                  <a href="#" class="text-decoration-none me-2">
+                    <img src="img/odnoklassniki.png" alt="">
+                  </a>
+                  <a href="#" class="text-decoration-none me-2">
+                    <img src="img/youtube.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-body-secondary">
+        <div class="border-bottom">
+          <div class="container pt-4 pb-5">
+            <div class="row">
+              <div class="col-3">
+                <p class="fs-6 text-green">Контактный центр</p>
+                <a class="fs-4 text-black" href="">+7 (495) 023-60-84</a>
+              </div>
+              <div class="col-3">
+                <p class="fs-6 text-green">Экстренная госпитализация</p>
+                <a class="fs-4 text-black" href="">+7 (495) 182-71-14</a>
+              </div>
+              <div class="col-3">
+                <p class="fs-6 text-green">Приложение SmartMed</p>
+                <a href="">
+                  <img src="img/appstore.svg" height="35px" alt="">
+                </a>
+                <a href="">
+                  <img src="img/googleplay.svg" height="35px" alt="">
+                </a>
+              </div>
+              <div class="col-3 d-flex align-items-center ps-4">
+                <a href="" class="d-inline-flex">
+                  <img src="img/eagle.svg" width="54px" alt="">
+                  <p class="fs-13 lh-1 m-0 ms-3 gray-h">Независимая оценка качества оказания услуг медицинским организациям<br><br>
+                  <span class="text-green">Участвовать в голосовании</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div >
+        <div class="container d-flex flex-row fs-13">
+          <div class="col-8 py-4">
+            <a class="me-3 gray-h" href="">Оплата услуг</a>
+            <a class="me-3 gray-h" href="">Публичное предложение МЕДСИ</a>
+            <a class="me-3 gray-h" href="">Версия для слабовидящих</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end py-4 gray-h">
+            <p>© 1996-2023 АО «Группа компании «МЕДСИ»</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</html>
+

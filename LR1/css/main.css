@@ -1,0 +1,201 @@
+@font-face {
+    font-family: HelveticaNeue; 
+    src: url("../fonts/HelveticaNeue.ttf") format("truetype");  
+}
+    
+@font-face {
+    font-family: HelveticaNeue-Medium; 
+    src: url("../fonts/HelveticaNeue-Medium.ttf") format("truetype");  
+}
+
+@font-face {
+    font-family: HelveticaNeue-Bold; 
+    src: url("../fonts/HelveticaNeue-Bold.ttf") format("truetype");  
+}
+
+@font-face {
+    font-family: HelveticaNeueCyr; 
+    src: url("../fonts/HelveticaNeueCyr-Light.woff2") format("truetype");  
+}
+
+body {
+    font-family: HelveticaNeue, sans-serif;
+}
+
+.gray-h {
+    color: #373737!important;
+}
+
+.bg-blue-l {
+    background-color: #ECF6F8;
+}
+
+#upheader ul, .select-clinic, .dropdown-menu {
+    font-size: 14px!important;
+}
+
+.active:after {
+    content: "";
+    display: block;
+    height: 3px;
+    right: 0px;
+    left: 0px;
+    top: calc(100% + 1px);
+    background-color: #fdda01;
+}
+
+.txt-block:before {
+    content: "";
+    display: block;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: 4px solid #3d9798;
+    border-left: 4px solid #3d9798;
+    border-right: 4px solid #3d9798;    
+}
+
+.subtitle {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 4px solid #3d9798;
+    border-bottom: none;
+    top: 45px;
+}
+
+.subtitle .text-center {
+    font-family: HelveticaNeueCyr;
+    font-size: 50px!important;
+    font-weight: 300px!important;
+    top: -45px;
+    width: 350px;
+}
+
+.ff-HelveticaCyr {
+    font-family: HelveticaNeueCyr;
+}
+
+#covid-s {
+    text-shadow: 1px 1px 10px rgb(0 0 0 / 27%);
+}
+
+.bg-yellow {
+    background-color: #fdda01;
+}
+
+.subtitle-content {
+    font-family: HelveticaNeueCyr;
+    font-size: 18px;
+    font-weight: normal;
+    color: #2f353d;
+    padding: 10px 10px 10px;
+    border: 4px solid #3d9798;
+    border-radius: 15px;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.subtitle-content li, .accordion li, footer li {
+    list-style: none;
+}
+
+.subtitle-content ul li:before, .accordion li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.col-9 a:not(.dropdown-item):before {
+    content: "\2022";
+    color: #00abaa;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+footer li {
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+.dropdown-menu li {
+    margin: 0!important;
+}
+
+.b-container {
+    max-width: 1140px;
+}
+
+.landing_services {
+    margin-top: 80px;
+}
+
+.bg-green-light {
+    background-color: #61abaa;
+}
+
+.text-green {
+    color: #05746e;
+}
+
+.bg-green-light a {
+    font-size: 23px;
+}
+
+.bg-green-light a span {
+    font-size: 14px;
+}
+
+.landing_intro__arc {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 83px;
+    fill: #fff;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.accordion-price {
+    background: url("../img/price-bg.svg") no-repeat;
+    width: 125px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.select-clinic {
+    width: 300px;
+    line-height: 46px;
+}
+
+.bg-green {
+    background-color: #00aeab;
+}
+
+.bg-green-footer {
+    background-color: #4cc4c3;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
